@@ -67,14 +67,19 @@ dropout and adding more decay would make it learn too slowly.
 To start off, the only data augmentation I had was random cropping and random 
 horizontal flipping. However, the model was still overfitting, so I decided to 
 add some more augmentation: random rotation and color jitter, which slightly 
-adjusts the brightness, contrast, saturation and hue. Below you can see 
+adjusts the brightness, contrast, saturation and hue. I did not change the hue,
+because I was afraid that a bird could be classified incorrectly (e.g. a swan
+with a pink hue being classified as a flamingo). Below you can see 
 the difference in images before and after the added data augmentation. 
 Original            |With Crop and Flip | With Crop, Flip, Color Jitter, and Rotation
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](figs/original.jpg)  |![](figs/aug.png)|![](figs/extraaug.png)
 
-The results were impressive. Although the accuracy of the training set grew
-more slowly, the testing accuracy was now __% instead of the prior 67.8%.
+The results were interesting. The accuracy of the training set grew
+more slowly, and the testing accuracy was now 66.9% instead of the prior 67.8%.
+Without adding color jitter, it also performed better with an accuracy of 67.5%.
+This may be because the changes in the color may be obscuring the features in
+a way not intended. 
 
 ## What I Learned and What's Next
 While working on this project, I learned that there's no one way to get the 
