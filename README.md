@@ -8,9 +8,10 @@ explore the various parameters, model modifications, and data augmentations
 that could be done to improve the accuracy of the convolutional neural network 
 for this bird dataset.
 
-<video width=480 height=270 controls>
-  <source src="figs/video.mp4">
-</video>
+### Video
+[![What Bird? The Video](https://img.youtube.com/vi/IgxX2vIqiFg/0.jpg)](https://youtu.be/IgxX2vIqiFg)
+(Click the image to open on YouTube)
+
 
 ## Where I Started
 Honestly, I just wanted to know why the things we were learning worked and try 
