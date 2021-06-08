@@ -69,9 +69,9 @@ To start off, the only data augmentation I had was random cropping and random
 horizontal flipping. However, the model was still overfitting, so I decided to 
 add some more augmentation: random rotation and color jitter (i.e. adjusting
 brightness, contrast, saturation and hue). I did not change the hue,
-because I was afraid that a bird could be classified incorrectly (e.g. a swan
-with a pink hue being classified as a flamingo). Below you can see 
-the difference in images before and after the added data augmentation. 
+because I was afraid that a bird could be classified incorrectly (e.g. training
+with a pink-hue swan resulting in a flamingo being classified as such). Below 
+you can see the difference in images before and after the added data augmentation. 
 Original            |With Crop and Flip | With Crop, Flip, Color Jitter, and Rotation
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](figs/original.jpg)  |![](figs/aug.png)|![](figs/extraaug.png)
