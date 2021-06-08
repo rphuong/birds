@@ -8,7 +8,7 @@ explore the various parameters, model modifications, and data augmentations
 that could be done to improve the accuracy of the convolutional neural network 
 for this bird dataset.
 
-! Add video here !
+![](figs/video.mp4)
 
 ## Where I Started
 Honestly, I just wanted to know why the things we were learning worked and try 
