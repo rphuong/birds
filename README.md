@@ -9,7 +9,8 @@ that could be done to improve the accuracy of the convolutional neural network
 for this bird dataset.
 
 ### Video
-[![What Bird? The Video](https://img.youtube.com/vi/IgxX2vIqiFg/0.jpg)](https://youtu.be/IgxX2vIqiFg)
+<a href="https://youtu.be/IgxX2vIqiFg" target="_blank"><img src="https://img.youtube.com/vi/IgxX2vIqiFg/0.jpg" alt="What Bird? The Video"></a>
+
 (Click the image to open on YouTube)
 
 
