@@ -48,7 +48,9 @@ final lowest losses for the various learning rates after training for 1 epoch.
 |Loss|3.228|3.146|3.165|3.162|3.115|3.010|**2.942**|3.067|
 
 ### Reducing Overfitting
-Next, I wanted to reduce the overfitting of the model to the training set. 
+Next, I wanted to reduce the overfitting of the model to the training set. At 
+this point, the model was at 97.8% training accuracy but only 66.5% testing
+accuracy. 
 
 #### Dropout
 After researching a bit about overfitting, I discovered that you can add noise
@@ -78,7 +80,18 @@ The results were interesting. The accuracy of the training set grew
 more slowly, and the testing accuracy was now 66.9% instead of the prior 67.8%.
 Without adding color jitter, it also performed better with an accuracy of 67.5%.
 This may be because the changes in the color may be obscuring the features in
-a way not intended. 
+a way not intended. However, the color jitter was still helping the overfitting.
+
+The table below compares the training and testing accuracy for the various 
+experiments.
+Experiment|No Dropout|Dropout|Weight Decay|Rotation|Rotation & Color
+----------|----------|-------|------------|--------|----------------
+Training  |97.8      |94.8   |94.7        |90.3    |84.2
+Testing   |66.5      |67.8   |67.3        |67.5    |66.9
+Difference|31.3      |27.0   |27.4        |22.8    |17.3
+
+In the end, the best testing accuracy was at 68%. The model had dropout and
+rotation but no color changing. 
 
 ## What I Learned and What's Next
 While working on this project, I learned that there's no one way to get the 
